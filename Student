@@ -1,0 +1,41 @@
+
+/**
+ * Write a description of class Student here.
+ *
+ * @Camila Lee,Alicia Lee,Amy Chan
+ * @5/6/18
+ */
+import java.util.*;
+public class Student
+{
+    private String username,name;
+    private Vector<String> courses;
+
+    /**
+     * Constructor for objects of class Student
+     */
+    public Student(String studentUsername,String studentName, Vector<String> studentCourses){
+        username=studentUsername;
+        name=studentName;
+        courses=studentCourses;
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public String getName(){
+        return name;
+    }
+    public String getUsername(){
+        return username;
+    }
+    public Vector<String> getCourses(){
+        return courses;
+    }
+    public void addCourse(String course){
+        courses.add(course);
+    }
+}
